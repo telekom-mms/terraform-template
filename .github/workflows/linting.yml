@@ -4,5 +4,5 @@ name: linting
 on: [push, pull_request]
 
 jobs:
-  call-workflow-linting:
-    uses: T-Systems-MMS/terraform-template/workflows/linting.yml@main
+  call-linting:
+    uses: michaelamattes/.github/.github/workflows/terraform_linting.yml@main
