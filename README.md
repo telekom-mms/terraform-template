@@ -16,8 +16,8 @@ replace the following placeholder
 * tpl_name
 
 ```example
-tpl_module     = "container"
-tpl_source     = "registry.terraform.io/T-Systems-MMS/acr/azurerm"
+tpl_module     = container
+tpl_source     = registry.terraform.io/T-Systems-MMS/acr/azurerm
 tpl_local_name = container_registry
 tpl_name       = crmms
 ```
@@ -30,8 +30,10 @@ replace the following placeholder
 * tpl_module
 
 ```example
-tpl_module   = "container"
-tpl_provider = azurerm
+tpl_module        = container
+tpl_provider      = azurerm
+tpl_resource_type = azurerm_container_registry
+tpl_local_name    = container_registry
 ```
 
 `outputs.tf`
