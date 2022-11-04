@@ -7,17 +7,12 @@ on:
       - master
       - main
 env:
-  TEMPLATE_REPOSITORY: 'T-Systems-MMS/terraform-template'
-  RELEASE_FILES:
-    - README.md
+  TEMPLATE_REPOSITORY: T-Systems-MMS/terraform-template
 
 jobs:
-  call-readme:
-    if: github.repository != '$TEMPLATE_REPOSITORY'
-    uses: T-Systems-MMS/.github/.github/workflows/terraform_readme.yml@main
-
   call-release:
     if: github.repository != '$TEMPLATE_REPOSITORY'
     uses: T-Systems-MMS/.github/.github/workflows/release.yml@main
     with:
-      files: $RELEASE_FILES
+      readme: terraform
+      files: README.md
