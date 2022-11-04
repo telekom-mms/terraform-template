@@ -17,7 +17,7 @@ replace the following placeholder
 
 ```example
 tpl_module     = container
-tpl_source     = registry.terraform.io/T-Systems-MMS/acr/azurerm
+tpl_source     = registry.terraform.io/T-Systems-MMS/container/azurerm
 tpl_local_name = container_registry
 tpl_name       = crmms
 ```
