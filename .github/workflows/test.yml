@@ -4,8 +4,11 @@ name: terratest
 on: [pull_request]
 
 env:
-  PACKAGE: Azure
+  TEMPLATE_REPOSITORY: T-Systems-MMS/terraform-template
 
 jobs:
   call-test:
+    if: github.repository != '$TEMPLATE_REPOSITORY'
     uses: T-Systems-MMS/.github/.github/workflows/terratest.yml@main
+    with:
+      test: azure
