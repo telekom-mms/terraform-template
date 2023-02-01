@@ -1,5 +1,5 @@
 ---
-name: terratest
+name: test
 
 on: [pull_request]
 
