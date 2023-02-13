@@ -6,6 +6,16 @@ This is a template for terraform modules.
 
 replace the following content from template
 
+`.github/settings.yaml`
+
+replace the following placeholder
+
+* tpl_resources
+
+```example
+tpl_resources  = azurerm container
+```
+
 `examples/*`
 
 replace the following placeholder
