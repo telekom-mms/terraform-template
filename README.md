@@ -6,7 +6,7 @@ This is a template for terraform modules.
 
 replace the following content from template
 
-`.github/settings.yaml`
+`.github/settings.json`
 
 replace the following placeholder
 
