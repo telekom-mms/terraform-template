@@ -1,8 +1,8 @@
 /**
 * # tpl_module
 *
-* This module manages the tpl_provider tpl_module resources.
-* For more information see https://registry.terraform.io/providers/tpl_provider/latest/docs > tpl_module
+* This module manages the tpl_provider tpl_module resources, see https://registry.terraform.io/providers/tpl_provider/latest/docs.
+* For more information about the module structure see https://telekom-mms.github.io/terraform-template.
 *
 */
 
