@@ -5,7 +5,7 @@
 The basic approach to our Terraform modules is as follows:
 
 ```bash
-<tool>-<provider name>-<modul name>
+terraform-<provider-name>-<modul-name>
 ```
 
 This results in the following scheme for our Azure modules, for example:
@@ -20,10 +20,10 @@ terraform-azuredevops-project
 
 The name, structure and content of a module are based on the provider.
 
-This means how a module is named and which resources are combined into a module depends on the provider implementation. This implementation should bring the following simplification:
+This means how a module is named and which resources are combined into a module depends on the provider implementation. This implementation should bring the following simplifications:
 
 * When working with the module, you can also refer to the provider documentation.
-* If the resource does not exist in the module, then it does not currently exist. -> An extension of the module is therefore necessary, this can be done through contribute or open an enhancement issue.
+* If the resource does not exist in the module, then it does not currently exist. -> An addition to the module is therefore necessary, this can be done by contributing or opening an enhancement issue.
 
 | provider   | documentation                                                                                   | code base                                                                                                    |
 | ---------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
