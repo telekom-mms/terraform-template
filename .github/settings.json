@@ -5,8 +5,9 @@
     "default_branch": "main",
     "homepage": "https://telekom-mms.github.io/terraform-template",
     "topics": [
+      "azure",
       "terraform",
-      "azure"
+      "tpl-resource-type"
     ]
   }
 }
