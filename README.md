@@ -1,69 +1,40 @@
-# terraform-template
+# terraform-azuread-identity
 
-This is a template for terraform modules.
+A Terraform module that manages azuread user, azuread group, azuread application, azuread service principal, azuread application password, azuread service principal password resources.
 
 ## Usage
 
-replace the following content from template
+```hcl
+module "identity" {
+  source  = "registry.terraform.io/telekom-mms/identity/azuread"
+  version = "1.0.0"
 
-`.github/settings.json`
+  users = {
+    user1 = {
+      display_name        = "User One"
+      user_principal_name = "user1@example.com"
+      mail_nickname       = "user1"
+      password            = "Password123!"
+    }
+  }
 
-replace the following placeholder
+  groups = {
+    group1 = {
+      display_name     = "Group One"
+      security_enabled = true
+    }
+  }
 
-* tpl_resources
+  applications = {
+    app1 = {
+      display_name = "Application One"
+    }
+  }
 
-```example
-tpl_resources  = azurerm container
-```
-
-`examples/*`
-
-replace the following placeholder
-
-* tpl_module
-* tpl_source
-* tpl_local_name
-* tpl_name
-
-```example
-tpl_module     = container
-tpl_source     = registry.terraform.io/telekom-mms/container/azurerm
-tpl_local_name = container_registry
-tpl_name       = crmms
-```
-
-`main.tf`
-
-replace the following placeholder
-
-* tpl_provider
-* tpl_module
-
-```example
-tpl_module        = container
-tpl_provider      = azurerm
-tpl_resource_type = azurerm_container_registry
-tpl_local_name    = container_registry
-```
-
-`outputs.tf`
-
-replace the following placeholder
-
-* tpl_resource_type
-* tpl_local_name
-
-```example
-tpl_resource_type = azurerm_container_registry
-tpl_local_name    = container_registry
-```
-
-`variables.tf`
-
-replace the following placeholder
-
-* tpl_local_name
-
-```example
-tpl_local_name = container_registry
+  service_principals = {
+    sp1 = {
+      application_id = "00000000-0000-0000-0000-000000000000"
+    }
+  }
+}
 ```

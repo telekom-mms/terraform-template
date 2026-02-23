@@ -1,13 +1,20 @@
 {
   "repos": {
-    "description": "A Terraform module that manages the tpl_resources resources from the azurerm provider.",
+    "description": "A Terraform module that manages Azure AD resources.",
     "visibility": "public",
     "default_branch": "main",
-    "homepage": "https://telekom-mms.github.io/terraform-template",
+    "homepage": "https://telekom-mms.github.io/terraform-azuread-identity",
     "topics": [
-      "azure",
+      "azuread",
+      "identity",
       "terraform",
-      "tpl-resource-type"
+      "user",
+      "group",
+      "group-member",
+      "application",
+      "application-password",
+      "service-principal",
+      "service-principal-password"
     ]
   }
 }
